@@ -1,0 +1,148 @@
+body
+{
+    /*Choose Font!*/
+    background-color: #fafafa;
+}
+nav { box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); }
+.header
+{
+    margin: 10px auto;
+    width: 95%;
+    border: 5px solid #B30000;
+    background-color: #5A5A5A;
+    border-radius: 4px;
+    text-align: center;
+}
+.page
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-section
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 440px;
+    width: 100%;
+}
+.page-section-odd  { background-color: #fafafa; }
+.page-section-even { background-color: #ffffff; }
+.content 
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.columns
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.image-container { display: flex; }
+.profile-pic
+{
+    width: 300px;
+    height: 400px;
+}
+.landscape 
+{
+    width: 300px;
+    height: 200px;
+}
+#dice-pic { width: 350px; }
+#home-class
+{
+    height: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: 46% 100%;
+}
+#barbarian-pic { width: 280px; }
+#cleric-pic
+{
+    width: 350px;
+    height: 350px;
+}
+#druid-pic     { width: 340px; }
+#fighter-pic   { width: 275px; }
+#rogue-pic     { width: 280px; }
+#wizard-pic    { width: 160px; }
+#races-pic     { height: 250px;}
+#dwarf-pic     { width: 350px; }
+#elf-pic       { width: 280px; }
+#human-pic     { width: 250px; }
+#gnome-pic     { width: 340px; }
+#half-elf-pic  { width: 280px; }
+#tiefling-pic  { width: 270px; }
+.second { order: 1; }
+img { width: 100%; }
+h1
+{
+    color: #fff;
+    border-color: #ff8c00;
+    
+}
+.divider { height: 50px; }
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 100px;
+}
+
+
+@media only screen and (max-width: 400px)
+{
+    .page-section { height: 1000px; }
+    .columns
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    text-container { width: 100%; }
+    .second { order: -1; }
+    h1 { font-size: 2em; }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px)
+{
+    .page-section { height: 700px; }
+    .text-container { width: 40%; }
+    h1 { font-size: 3em; }
+}
+@media only screen and (min-width: 961px)
+{
+    .content
+    {
+        width: 1020px;
+        margin: 0 auto;
+    }
+    .profile-pic 
+    {
+        width: 300px;
+        height: 400px;
+    }
+    .landscape 
+    {
+        width: 450px;
+        height: 300px;
+    }
+    .photo img
+    {
+        width: 100%;
+        max-height: 550px;
+        object-fit: cover;
+        object-position: 100% 100%;
+    }
+    #homepage-cover { object-position: 100% 30%; }
+    #classespic { object-position: 100% 25%; }
+    #create-cover { object-position: 100% 33%; }
+    .text-container { width: 40%; }
+    h1 { font-size: 5em; }
+}
